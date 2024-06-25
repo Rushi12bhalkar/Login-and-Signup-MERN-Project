@@ -7,7 +7,7 @@ const Homepage = ({setLoginUser}) => {
   const d = new Date().toLocaleDateString();
   const t = new Date().toLocaleTimeString();
 
-  var apiUrl="http://localhost:9002"
+  var apiUrl="https://login-and-signup-api.vercel.app"
 
     const[post,setPost] = useState([])
 
