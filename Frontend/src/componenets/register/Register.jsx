@@ -23,6 +23,9 @@ function Register() {
         setUser({...user,[name]:value})
     }
 
+    
+    axios.defaults.withCredentials = true;
+
     const register = () => {
       const { name, email, password, reEnterPassword } = user
       if( name && email && password && (password === reEnterPassword)){
