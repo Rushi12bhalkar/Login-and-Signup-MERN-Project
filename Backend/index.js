@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://localhost:27017/Login&RegisterDB")
+mongoose.connect('mongodb+srv://rushikeshbhalkar123:Rushi@123@rushikesh.tyr22o4.mongodb.net/Login&RegisterDB')
 
 const express = require('express')
 const app = express()
@@ -12,7 +12,14 @@ app.use(bodyparser.json())
 
 app.use(express.json())
 
-app.use(cors())
+app.use(cors(
+   {
+        origin: [""],
+        methods:["POST", "GET"],
+        credentials: true     
+   }
+   
+));
 
 
 
@@ -26,6 +33,10 @@ app.use(cors())
 
 //Routes
 
+app.get("/", (req,res)=>{
+   res.json("Hello")
+})
+        
 app.post("/register",async(req,res,next)=>
    {
       const { name, email, password } = req.body;
