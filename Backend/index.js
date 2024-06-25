@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://rushikeshbhalkar123:Rushi@123@rushikesh.tyr22o4.mongodb.net/Login&RegisterDB?retryWrites=true&w=majority&appName=Rushikesh
-')
+mongoose.connect('mongodb+srv://rushikeshbhalkar123:Rushi@123@rushikesh.tyr22o4.mongodb.net/Login&RegisterDB?retryWrites=true&w=majority')
 
 const express = require('express')
 const app = express()
@@ -108,6 +107,6 @@ app.post("/register",async(req,res,next)=>
          }
       })
 
-app.listen(9002,() => {
+app.listen(https://login-and-signup-api.vercel.app,() => {
     console.log("BE started at port 9002")
 })
