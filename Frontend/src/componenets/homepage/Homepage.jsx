@@ -7,7 +7,8 @@ const Homepage = ({setLoginUser}) => {
   const d = new Date().toLocaleDateString();
   const t = new Date().toLocaleTimeString();
 
-  var apiUrl="https://login-and-signup-api.vercel.app"
+   var apiUrl="https://login-and-signup-api.vercel.app"
+   axios.defaults.withCredentials = true;
 
     const[post,setPost] = useState([])
 
