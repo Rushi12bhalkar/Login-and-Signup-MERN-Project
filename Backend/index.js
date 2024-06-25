@@ -14,7 +14,7 @@ app.use(express.json())
 
 app.use(cors(
    {
-        origin: [""],
+        origin: ["https://login-and-signup-mern-frontendproject.vercel.app/"],
         methods:["POST", "GET"],
         credentials: true     
    }
