@@ -107,6 +107,6 @@ app.post("/register",async(req,res,next)=>
          }
       })
 
-app.listen(https://login-and-signup-api.vercel.app,() => {
+app.listen(9002.app,() => {
     console.log("BE started at port 9002")
 })
