@@ -19,7 +19,8 @@ const Login = ({ setLoginUser}) => {
             [name]: value
         })
     }
-
+   
+   axios.defaults.withCredentials = true;
     const login = () => {
         axios.post('https://login-and-signup-api.vercel.app/', user)
         .then(res => {
